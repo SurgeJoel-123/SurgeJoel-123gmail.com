@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Unidad Educativa</title>
+    <link rel="stylesheet" href="servicios.css">
+    <style>
+        body {
+            font-family: "Oswald-Variable", sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color:hsl(116, 44%, 30%);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        
+        nav li {
+            margin: 0 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #servicios h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .servicios-lista {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .servicio-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .servicio-item img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .servicio-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .servicio-descripcion {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .reseña-perspectiva {
+            perspective: 1000px;
+            perspective-origin: 50% 50%; 
+            margin-top: 30px; 
+        }
+
+        .reseña-texto {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ccc; 
+            background-color: #f9f9f9; 
+            border-radius: 5px;
+            transform: rotate3d(1, 1, 0, 10deg); 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        .reseña-texto:hover {
+            transform: rotate3d(1, 1, 0, 0deg) scale(1.02); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+        }
+
+        .reseña-texto p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unidad Educativa "EL ORO"</h1>
+        <nav>
+            <ul>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="servicios">
+            <h2>Servicios que ofrecemos</h2>
+            <ul class="servicios-lista">
+                <li class="servicio-item">
+                    <img src="Mate.jfif" alt="Clases de Matemáticas">
+                    <h3>Clases de Matemáticas</h3>
+                    <p class="servicio-descripcion">Enfocadas en el razonamiento lógico y la resolución de problemas.</p>
+                </li>
+                <li class="servicio-item">
+                    <img src="Naturales.jfif" alt="Clases de Ciencias">
+                    <h3>Clases de Ciencias</h3>
+                    <p class="servicio-descripcion">Exploramos el mundo natural a través de la biología, química y física.</p>
+                </li>
+                <li class="servicio-item">
+                    <img src="Lengua.jfif" alt="Clases de Lengua y Literatura">
+                    <h3>Clases de Lengua y Literatura</h3>
+                    <p class="servicio-descripcion">Desarrollamos habilidades de comunicación, lectura y escritura.</p>
+                </li>
+                <li class="servicio-item">
+                    <img src="Educa.jfif" alt="Educación Física">
+                    <h3>Educación Física</h3>
+                    <p class="servicio-descripcion">Fomentamos la actividad física, el trabajo en equipo y la salud.</p>
+                </li>
+                <li class="servicio-item">
+                    <img src="Pedagógia.jfif" alt="Asesoramiento Psicológico">
+                    <h3>Asesoramiento Psicológico</h3>
+                    <p class="servicio-descripcion1">Apoyo emocional y orientación para el bienestar de nuestros estudiantes.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="reseña-perspectiva">
+            <div class="reseña-texto">
+                <p>Nuestra institución educativa se dedica a ofrecer una formación integral desde la educación preescolar hasta la secundaria. Nos esforzamos por crear un ambiente de aprendizaje estimulante y propicio para el desarrollo completo de nuestros alumnos. Contamos con instalaciones modernas como aulas equipadas, laboratorios especializados, una biblioteca bien surtida y amplias áreas recreativas. Nuestro equipo de docentes altamente capacitados está comprometido con la excelencia académica y la formación en valores fundamentales como el respeto y la responsabilidad. Creemos firmemente en la importancia de la colaboración con la comunidad educativa, involucrando activamente a padres y tutores en el proceso de enseñanza-aprendizaje. En resumen, somos un espacio fundamental para el crecimiento académico y personal de los jóvenes.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
